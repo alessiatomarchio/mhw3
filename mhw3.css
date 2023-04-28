@@ -1,0 +1,363 @@
+body {
+    margin: 0 ;
+    display:flex; 
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(226, 226, 226);
+    font-size: 20px;
+}
+
+@media (max-width: 800px) {
+
+    header {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    position: relative;
+    background-image: url(shutterisland.jpg);
+    background-size: calc(100%);
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+   }
+
+}
+
+@media(min-width: 800px) {
+
+    header {
+        display: flex;
+        position: relative;
+        background-image: url(shutterisland.jpg);
+        height: 500px;
+        background-repeat: no-repeat;
+        width: 100%;
+        background-size: cover;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 800px)
+{ 
+    #titolo{
+        position: absolute;
+        color: whitesmoke; 
+        font-size: 2rem;
+        font-family: 'Bebas Neue', cursive;  
+        font-weight: normal; 
+        z-index: 2;
+    }
+}
+@media (min-width: 800px) {
+
+    #titolo{
+        position: absolute;
+        max-width: 780px;
+        color: whitesmoke; 
+        font-size: 4rem;
+        font-family: 'Bebas Neue', cursive;  
+        font-weight: normal; 
+        z-index: 2;
+    }
+    
+}
+
+#menu {
+    display: none;
+    position: absolute;
+    z-index: 4;
+}
+
+.overlay {
+   position: absolute;
+   left: 0;
+   top: 0; 
+   background-color:  rgba(0, 0, 0, .3); 
+   height: 100%; 
+   width: 100%;
+}
+@media (max-width: 800px) {
+
+    #navbar{
+        display: none;
+    }
+
+    #menu {
+        display: block;
+        margin-top: 215px;
+        width: 100%;
+        display: flex ;
+        align-items: left;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 10px;
+    }
+
+    #menu div {
+        width: 30px;
+        height: 5px;
+        background-color: green;
+        border-radius: 2px;
+        margin-top: 3.5px;
+    }
+
+    #main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%; 
+        padding-top: 70px; 
+        background-color: whitesmoke;
+        
+    }
+
+}
+
+.container {
+    position: relative;
+    
+}
+
+@media (min-width: 800px){
+    .utente {
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        flex-direction:column;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 1rem;
+        position: absolute;
+        z-index: 2;
+        top: -50px;
+        width: auto;
+        text-align: center;
+        line-height: 1rem;
+    }
+}
+
+@media (max-width: 800px){
+    .utente{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        flex-direction:column;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 2rem;
+        position: absolute;
+        z-index: 2;
+        top: -50px;
+        width: 100%;
+        text-align: center;
+        line-height: 1rem;
+       }
+       .utente img{
+        position:relative;
+        width: 70px; 
+        height: 70px;
+        border-radius: 100%;
+        background-color: white;
+          }
+
+        .au {
+            font-style: oblique;
+            font-size: 1rem;
+            line-height: 12px;
+            font-family: 'Bebas Neue', cursive;
+            color: rgba(0, 0, 0,0.9);
+        }
+    }
+    @media (min-width:800px) {
+        .utente img{
+            position:relative;
+            width: 100px; 
+            height: 100px;
+            border-radius: 100%;
+            background-color: white;
+        }
+    }
+
+.au {
+    font-style: oblique;
+    font-size: small;
+    font-family: 'Bebas Neue', cursive;
+    color: rgba(0, 0, 0,0.9);
+}
+
+@media (min-width: 800px) {
+
+#navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    background-color: darkgray;
+    border: thick double silver;
+    width: 100%;
+    margin-top: 110px;
+}
+
+}
+.links {
+    background-color: grey;
+    text-decoration: none;
+    color: white;
+    font-family: 'EB Garamond', serif;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    border-radius: 12px;
+    padding: 5px 10px;
+    
+}
+.links:hover{
+    background-color: silver;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 66.67%;
+    padding-top: 70px; 
+    background-color: whitesmoke;
+    
+}
+@media (min-width:800px){
+    .numero{
+        color: black;
+        font-size: 2rem;
+        position: absolute; 
+        left: -40px; 
+    }
+}
+
+@media (max-width:800px){
+    .numero{
+        color: black;
+        font-size: 2rem;
+        position: absolute; 
+        left: -40px; 
+    }
+}
+.Film{ 
+    color: black;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    font-style: italic;
+    font-family:'EB Garamond', serif;
+}
+
+.trama{
+    margin-top: 20px;
+    font-size: 20px;
+    font-style:oblique;
+    font-family:'EB Garamond', serif;
+    padding: 0px 10px;
+    
+}
+
+.Valutazione{
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    color: darkred;
+    text-align: left;
+    width: 100%;
+    padding-left: 15px;
+}
+
+@media (max-width: 800px) {
+    .Valutazione {
+        font-size: 1.5rem;
+    }
+}
+
+.blocco_film {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/**/
+.blocco_song {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%; 
+}
+
+.blocco_song img{
+    width: 145px;
+    height: 145px; 
+}
+
+
+@media (min-width:800px){
+#main div img {
+    width: 40%;
+    margin-bottom: 120px;
+    }
+}
+
+@media (max-width:800px){
+    #main div img {
+        width: 95%;
+        margin-bottom: 120px;
+        }
+    }
+
+.titolo_film {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    position: relative;
+}
+
+footer{
+  
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    background-color: darkgray;
+    height: 120px;
+    width: 100%; 
+}
+@media (max-width:800px){
+    #chiusura1, #chiusura2{
+    font-size: 1.5rem;
+    font-style: italic;
+    font-family:'EB Garamond', serif;
+    font-weight: lighter;
+    color: rgba(0, 0, 0,0.5);
+    padding: 10px; 
+    }
+}
+@media (min-width:800px){
+#chiusura1, #chiusura2{
+   
+    font-size: 2rem;
+    font-style: italic;
+    font-family:'EB Garamond', serif;
+    font-weight: lighter;
+    color: rgba(0, 0, 0,0.5);
+    padding: 10px; 
+
+}
+}
+.blocco_song a {
+    color: green; 
+    font-size: 1rem; 
+    
+}
+#songs {
+    display: flex; 
+    width: 100%; 
+}
+ .topSong{
+    color: black; 
+    font-family: 'Bebas Neue', cursive;
+    text-align:center;
+}
